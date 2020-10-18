@@ -9,10 +9,16 @@
 <body>
     <nav class="navbar">
         <a class="navbar-link-logo" href="#"><i class="fas fa-globe-asia"></i></a>
+        
         <a class="navbar-link" href="#">Home</a>
         <a class="navbar-link" href="#">About</a>
         <a class="navbar-link" href="#">Get Involved</a>
         <a class="navbar-link" href="#">Contact</a>
+        <button type="button" class="navbar-link-donate">Donate</button>
+    </nav>
+
+    <nav class="responsive-navbar">
+        <i class="fas fa-bars navbar-responsive-toggle"></i>
         <button type="button" class="navbar-link-donate">Donate</button>
     </nav>
     <main class="main-contact">
@@ -21,6 +27,7 @@
         </header >
         <div class="contact-body">
             <section class="contact-body__column">
+                <h3 class="contact-body__column__title">Get in touch</h3>
                 <form class="contact-body__column__form">
                     <label for="name" class="form-label">Enter your full name</label>
                     <input class="form-input" id="name" placeholder="John Doe">
@@ -29,10 +36,11 @@
                     <label for="email" class="form-label">Enter your email</label>
                     <input class="form-input" id="email" placeholder="johndoe@email.com">
                     <label for="comment" class="form-label">Leave us a message</label>
-                    <input class="form-input" id="comment" placeholder="Write us a message">
+                    <textarea class="form-input__comment" id="comment" placeholder="Write us a message"></textarea>
+                    <button type="submit" class="form-input__button" id="form-submit">Send Message</button>
                 </form>
             </section>
-            <section class="contact-body__column">
+            <section class="contact-body__column" id="img-column">
                 <img class="contact-body__column__img" alt="mail icon" src="./images/emailGif.gif">
             </section>
         </div>
