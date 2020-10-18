@@ -22,7 +22,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0 1rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-link, .navbar-link-donate, .navbar-link-logo, #navbar-responsive-toggle-open, #navbar-responsive-toggle-close {
@@ -223,14 +223,23 @@ body {
 
 
 .overlay {
-    z-index: 2;
-    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
     width: 100vw;
     color: white;
-    
     display: none;
     animation-name: open-res-nav;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+.overlay-container {
+    padding-top: 15%;
+    width: 100%;
+    animation-name: showNavContent;
+    animation-duration: 0.5s;
     animation-timing-function: ease-out;
 }
 
@@ -254,9 +263,45 @@ body {
     }
 }
 
-.responsive-navbar-link {
-    z-index: 3;
+@keyframes showNavContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideNavContent {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.responsive-navbar-link-logo {
+    display: block;
+    text-align: center;
+}
+
+.responsive-navbar-link-logo  i {
+    font-size: 6rem;
     color: black;
+}
+
+.responsive-navbar-link {
+    z-index: 1;
+    display: block;
+    text-align: center;
+    color: black;
+    margin: 1.5rem 0;
+}
+
+
+.lineBreak {
+    width: 100%;
 }
 
 #navbar-responsive-toggle-open {
@@ -265,4 +310,8 @@ body {
 
 #navbar-responsive-toggle-close {
     display: none;
+}
+
+.overlay-container {
+    height: 100%;
 }
