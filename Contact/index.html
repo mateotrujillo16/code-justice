@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-link-logo" href="../index.html"><i class="fas fa-globe-asia"></i></a>
+        <a class="navbar-link" href="../index.html">Home</a>
+        <a class="navbar-link" href="../About/index.html">About</a>
+        <a class="navbar-link" href="../Get-Involved/index.html">Get Involved</a>
+        <a class="navbar-link" href="./index.html">Contact</a>
+        <button type="" class="navbar-link-donate">Donate</button>
+    </nav>
+
+    <nav class="responsive-navbar">
+        <i class="fas fa-bars" id="navbar-responsive-toggle-open"></i>
+        <i class="fas fa-bars" id="navbar-responsive-toggle-close"></i>
+        <button type="button" class="navbar-link-donate">Donate</button>
+    </nav>
+    <div class="overlay">
+        <div class="overlay-container">
+            <a class="responsive-navbar-link-logo" href="../index.html"><i class="fas fa-globe-asia"></i></a>
+            <a class="responsive-navbar-link" href="../index.html">Home</a>
+            <hr class="lineBreak">
+            <a class="responsive-navbar-link" href="../About/index.html">About</a>
+            <hr class="lineBreak">
+            <a class="responsive-navbar-link" href="../Get-Involved/index.html">Get Involved</a>
+            <hr class="lineBreak">
+            <a class="responsive-navbar-link" href="./index.html">Contact</a>
+            <hr class="lineBreak">
+        </div>
+    </div>
+    <main class="main-contact">
+        <header class="contact-header">
+            <h1 class="contact-header__title">Contact</h1>
+        </header >
+        <div class="contact-body">
+            <section class="contact-body__column">
+                <h3 class="contact-body__column__title">Get in touch</h3>
+                <form class="contact-body__column__form">
+                    <label for="name" class="form-label">Enter your full name</label>
+                    <input class="form-input" id="name" placeholder="John Doe">
+                    <label for="number" class="form-label">Enter your phone number</label>
+                    <input class="form-input" id="number" placeholder="(777) - 777 - 7777">
+                    <label for="email" class="form-label">Enter your email</label>
+                    <input class="form-input" id="email" placeholder="johndoe@email.com">
+                    <label for="comment" class="form-label">Leave us a message</label>
+                    <textarea class="form-input__comment" id="comment" placeholder="Write us a message"></textarea>
+                    <button type="submit" class="form-input__button" id="form-submit">Send Message</button>
+                </form>
+            </section>
+            <section class="contact-body__column" id="img-column">
+                <img class="contact-body__column__img" alt="mail icon" src="./images/emailGif.gif">
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/3cf526719d.js" crossorigin="anonymous"></script>
+    <script src="./shared.js"></script>
+</body>
+</html>
