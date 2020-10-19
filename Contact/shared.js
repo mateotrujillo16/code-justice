@@ -41,9 +41,47 @@ if (toggleBtnClose) {
             toggleBtnClose.style.display = "none";
             // navContentContainer.style.display = "none";
 
-            // create a delay for hiding the overlay to match the duration of the animation
-            setTimeout(function(){
-                 responsiveNav.style.display = "none"; 
-                }, 500);
+            
     });
 }
+
+
+var landingNav = document.querySelector(".landing-nav");
+var open = document.querySelector("#landing-nav__open");
+var close = document.querySelector("#landing-nav__close");
+var text = document.querySelector("#landing-nav__list");
+var social = document.querySelector("#landing-nav-social-container");
+var backArrow = document.querySelector("#landing-nav__close");
+
+open.addEventListener("click", function() {
+    // landingNav.classList.add("active")
+    landingNav.style.animationName = "openNav";
+    landingNav.style.display = "block";
+    open.style.display = "none"
+    close.style.display = "block"
+    setTimeout(function(){
+        text.style.display = "block";
+        social.style.display = "flex";
+        backArrow.style.display = "block";
+       }, 700);
+})
+
+close.addEventListener("click", function() {
+    // landingNav.classList.remove("active")
+    landingNav.style.animationName = "closeNav";
+    
+    // create a delay for hiding the nav/elements to match the duration of the animation
+    setTimeout(function(){
+        landingNav.style.display = "none";
+        open.style.display = "block";
+        text.style.display = "none";
+        social.style.display = "none";
+        backArrow.style.display = "none";
+       }, 700);
+
+       setTimeout(function(){
+        open.style.display = "block";
+       }, 400);
+    close.style.display = "none"
+    
+})
