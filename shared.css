@@ -14,8 +14,8 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    background:lightskyblue;
-    opacity: .30;
+    background:whitesmoke;
+    opacity: .40;
     z-index: 1;
 }
 
@@ -33,11 +33,8 @@
 
 .content h1 {
     font-size: 3rem;
-    font-weight: bolder;
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 8rem;
-    background-color: linen;
-    opacity: .5;
 }
 
 /* Landing Page Nav  */
