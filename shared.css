@@ -14,8 +14,8 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    background:lightblue;
-    opacity: .25;
+    background:lightskyblue;
+    opacity: .30;
     z-index: 1;
 }
 
@@ -36,6 +36,8 @@
     font-weight: bolder;
     font-family: 'IBM Plex Sans', sans-serif;
     margin: 8rem;
+    background-color: linen;
+    opacity: .5;
 }
 
 /* Landing Page Nav  */
@@ -43,7 +45,7 @@
     position: absolute;
     top: 2.5rem;
     left: 2.5rem;
-    color: maroon;
+    color:  white;
     font-size: 2rem;
     z-index: 3;
 }
@@ -188,7 +190,7 @@
     color: #ff3d25;
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     .content h1 {
         font-size: 1.75rem;
         margin: 2rem;
