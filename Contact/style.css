@@ -137,7 +137,7 @@ body {
 
 .form-input, .form-input__comment, .form-input__button {
     border: solid transparent 1px;
-    background-color: #EFF4F8;
+    background-color: #ebf0f3;
     padding: 0.5rem;
     border-radius: 20px;
 }
@@ -293,6 +293,7 @@ body {
     text-align: center;
     color: black;
     margin: 1.5rem 0;
+    text-decoration: none;
 }
 
 
