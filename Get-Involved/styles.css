@@ -1,0 +1,145 @@
+
+/* Main body  */
+
+.main-contact {
+  height: 55vh;
+  padding-top: 3rem;
+}
+
+/* Header  */
+
+.contact-header {
+  position: relative;
+  background-image: linear-gradient(to right bottom,
+      rgba(36, 38, 42, 0.384),
+      rgba(55, 58, 63, 0.384)),
+    url("https://images2.alphacoders.com/880/thumb-1920-880680.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-header__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 5rem;
+}
+
+/* BODY */
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  min-width: calc(100vh - 550px - 60);
+}
+
+.get-involved-container {
+  padding: 3em;
+  display: grid;
+  grid-gap: 3em;
+}
+
+.container-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0px 50px 0px;
+}
+
+.container {
+  width: 100%;
+}
+
+.options {
+  padding: 3em;
+  border-radius: .3em;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 25%;
+  width: 100%;
+}
+
+.options p {
+  padding-top: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.image {
+  display: block;
+  width: 75%;
+  padding: 3em 3em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.faqs {
+  display: grid;
+  grid-gap: 3em;
+  padding: 3em;
+  border-radius: .3em;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  padding-bottom: 85px;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 91rem) {
+  .get-involved-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .get-involved-container img {
+    width: 100%;
+  }
+
+  .options {
+    width: 100%;
+  }
+  .contact-body__column__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 68rem) {
+  .get-involved-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .get-involved-container img {
+    width: 100%;
+  }
+
+  .options {
+    width: 100%;
+  }
+
+  .contact-body {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .contact-body__column {
+    width: 100%;
+  }
+
+  #img-column {
+    padding: 2rem;
+  }
+
+  .contact-body__column__img {
+    display: none;
+  }
+}
+
