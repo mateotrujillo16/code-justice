@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
@@ -28,14 +28,12 @@ body {
 .navbar-link, .navbar-link-donate, .navbar-link-logo, #navbar-responsive-toggle-open, #navbar-responsive-toggle-close {
     margin: 0;
     display: inline-block;
-    padding: 0.9rem 1.5rem;
+    padding: 0.89rem 1.5rem;
     text-align: center;
     background-color: white;
     text-decoration: none;
     color: black;
     cursor: pointer;
-    
-
 }
 
 .navbar-link:hover {
@@ -57,7 +55,6 @@ body {
     background-color: #47525f;
     border: 1px solid transparent;
     color: white;
-    
 }
 
 
@@ -185,18 +182,17 @@ body {
 @media (max-width: 91rem) {
     .contact-body__column__img {
         width: 100%;
-        /* margin-top: 6rem; */
     }
 }
 
 @media (max-width: 68rem) {
     .contact-body {
+        padding: 0;
         flex-direction: column-reverse;
     }
 
     .contact-body__column {
         width: 100%;
-        padding-top: 1rem;
     }
 
     #img-column {
@@ -326,16 +322,16 @@ body {
     left: 2.5rem;
     color: #1E2122;
     font-size: 2rem;
+    z-index: 1;
 }
 
 #landing-nav__open:hover {
     cursor: pointer;
-    /* box-shadow: 0 10px 20px rgba(0,0,0,.2);
-    transition: all 0.5s; */
 }
 
 .landing-nav {
-    position: relative;
+    position: absolute;
+    z-index: 1;
     height: 100vh;
     width: 20rem;
     padding: 3rem 3.75rem;
@@ -353,7 +349,6 @@ body {
     }
     100% {
         transform: translateX(0);
-        /* opacity: 1; */
     }
 }
 
@@ -364,12 +359,9 @@ body {
     100% {
         transform: translateX(-20rem);
         display: none;
-        /* opacity: 1; */
     }
 }
 
-.landing-nav-content {
-}
 
 #landing-nav__close {
     position: absolute;
@@ -398,7 +390,6 @@ body {
     text-align: right;
     animation-name: lowerIn;
     animation-duration: 0.2s;
-    animation-delay: 0;
     animation-timing-function: ease-out;
 }
 
@@ -428,7 +419,6 @@ body {
     padding: 0 3rem;
     animation-name: lowerIn;
     animation-duration: 0.2s;
-    animation-delay: 0;
     animation-timing-function: ease-out;
 }
 
