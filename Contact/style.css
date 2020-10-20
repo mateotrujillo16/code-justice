@@ -142,6 +142,13 @@ body {
     border-radius: 20px;
 }
 
+.form-input:focus, 
+.form-input__comment:focus, 
+.form-input__button:focus {
+    outline-style: none;
+    background-color: #e1edf5;
+}
+
 .form-input__comment {
     height: 15vh;
     max-width: 100%;
