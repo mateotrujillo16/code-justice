@@ -67,6 +67,8 @@ body {
 }
 
 
+
+
 /* Responsive navbar  */
 
 .responsive-navbar {
@@ -155,8 +157,22 @@ body {
 .form-input__comment:focus, 
 .form-input__button:focus {
     outline-style: none;
+}
+
+.form-input__button:hover {
+    cursor: pointer;
+    background-color: #5487e0;
+}
+
+.form-input__button:focus {
+    background-color: #446DB5;
+}
+
+.form-input:focus, 
+.form-input__comment:focus {
     background-color: #e1edf5;
 }
+
 
 .form-input__comment {
     height: 15vh;
@@ -180,6 +196,8 @@ body {
     width: 100%;
     padding: 0.7rem;
 }
+
+
 
 
 /* image  */
