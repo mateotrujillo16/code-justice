@@ -306,7 +306,44 @@ body {
     text-decoration: none;
   }
 
+/*---About page styling---*/
+h1{
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
 
+p{
+    font-family: 'IBM Plex Sans', sans-serif  ;
+    text-align: center;
+}
+
+.missionstate{
+    position: relative;
+    margin-top: 50px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(https://images.unsplash.com/photo-1564175678192-af94ad896ebf);
+    width:100vw;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    
+   }
+
+   .hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 1.5rem;
+  } 
+  
   /* Navbar responsive  */
 
 
