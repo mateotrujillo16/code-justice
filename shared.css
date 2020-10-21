@@ -343,29 +343,6 @@ p{
 
 .missionstate{
     position: relative;
-    margin-top: 50px;
-}
-
-.hero-image {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url(https://images.unsplash.com/photo-1564175678192-af94ad896ebf);
-    width:100vw;
-    height:100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    
-   }
-
-
-p{
-    font-family: 'IBM Plex Sans', sans-serif  ;
-    text-align: center;
-}
-
-.missionstate{
-    position: relative;
     margin-top: 3rem;
 }
 
@@ -378,7 +355,6 @@ p{
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
-    
    }
 
    .hero-text{
