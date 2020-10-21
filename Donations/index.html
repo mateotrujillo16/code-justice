@@ -8,6 +8,15 @@
 </head>
 <body>
 
+    <nav class="navbar">
+        <a class="navbar-link-logo" href="../index.html"><i class="fas fa-globe-asia"></i></a>
+        <a class="navbar-link" href="../index.html">Home</a>
+        <a class="navbar-link" href="../About/index.html">About</a>
+        <a class="navbar-link" href="../Get-Involved/index.html">Get Involved</a>
+        <a class="navbar-link" href="./index.html">Contact</a>
+        <button type="button" class="navbar-link-donate">Donate</button>
+    </nav>
+
     <header>
 
         <h1>Donations</h1>
@@ -15,35 +24,41 @@
     </header>
 
 
-    <div class="formContainer">
-        <form>
+    <div class="donation-body">
 
-            <p>
-                Even the smallest amount helps! A little can go a long way!
-            </p>
+        <section class="donation-body__column">
+
+            <h1 class="contact-body__column__title">Even the smallest amount helps! A little can go a long way!</h1>
+                <form class="contact-body__column__form">
+                
     
-            <input type="submit" value="$5">
+                    <input type="submit" value="$5" class="form-input__button" >
     
-            <input type="submit" value="$15">
+                    <input type="submit" value="$15" class="form-input__button">
     
-            <input type="submit" value="$25">
+                    <input type="submit" value="$25" class="form-input__button">
     
-            <input type="submit" value="$50">
+                    <input type="submit" value="$50" class="form-input__button">
+
+                    <label for="custom-amount" class="form-label">Enter Custom Amount</label>
+                    <input class="form-input" id="custom-amount" placeholder="Enter Amount" required>
+
+                    <input type="submit" value="Send" class="form-input__button"> 
     
-            <label for="customAmount">Enter Custom Amount Here: </label>
-            <input type="text" id="customAmount" placeholder="$$$"> 
-    
-        </form>
+                </form>
+
+        </section>
+
         
     </div>
 
-    <div>
+    <div class="darkContainer">
 
         <h2>Where do my donations go?</h2>
 
         <p>
 
-            At (company name?) our goal is to try to make the earth a better place, it's that simple. <br>
+            The goal of the Enviromental Justice Association is to try to make the earth a better place, it's that simple. <br>
             All of our proceeds and donations go straight into our enviromental involvement. What that means <br>
             is that all our efforts go into things like planting trees, cleaning up trash, <br>
             and fighting for our earth! This is our planet our home, we are all in this together <br>

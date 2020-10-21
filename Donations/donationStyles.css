@@ -1,30 +1,99 @@
 body, html {
     background-color: white;
 	height: 100%;
-    margin: 5px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
     text-decoration: none;
 }
 
 h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 h2{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 p{
    
     display: inline-block;
     padding: 15px 10px;
-    border: solid 1px black;
-     font-size: 10px;
+    font-size: 15px;
     border-radius: 0px;
 }
 
-.formContainer {
+/*custom container*/
+.darkContainer {
+    display: inline-block;
+    background-color:#444751;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height:auto;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Navbar  */
+
+.navbar, .responsive-navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.navbar-link, .navbar-link-donate, .navbar-link-logo, #navbar-responsive-toggle-open, #navbar-responsive-toggle-close {
+    margin: 0;
+    display: inline-block;
+    padding: 0 1.5rem;
+    height: 3rem;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.navbar-link, .navbar-link-logo {
+    vertical-align: middle;
+    line-height: 3rem;
+}
+
+
+
+.navbar-link:hover {
+    transition: all 0.8s;
+    background-color: #f3f3f3;
+}
+
+.navbar-link, .navbar-link-logo, #navbar-responsive-toggle-open, #navbar-responsive-toggle-close {
+    float: left;
+}
+
+.navbar-link-donate {
+    margin: 0.5rem 0;
+    float: right;
+    height: auto;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #47525f;
+    border: 1px solid transparent;
+    color: white;
+}
+
+/* Body  */
+
+.donation-body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -33,41 +102,99 @@ p{
     align-content: center;
 }
 
-form {
-    
-    width: 300px;
-    margin: 20px auto;
+.donation-body__column {
+    width: 50%;
+    padding: 5rem;
 }
 
-form label {
+.donation-body__column__title {
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Responsive navbar  */
+
+.responsive-navbar {
+    display: none;
+}
+
+#navbar-responsive-toggle-open, #navbar-responsive-toggle-close {
+    padding: 1rem 1.5rem;
+}
+
+/*Form*/
+.form-label, .form-input__comment {
     display: block;
-    width: 200px;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: bold;
-    background: #333;
-    color: white;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
-form input{
-    display: block;
-    width: 290px;
-    padding: 5px;
-    margin: 0 0 10px;
-    border: none;
-    font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+.form-input__comment, .form-input__button {
+    border: solid transparent 1px;
+    background-color: #ebf0f3;
+    margin: 10px;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
-input [type="submit"] {
+.form-input {
+    width: 100%;
+    border: solid transparent 1px;
+    background-color: #ebf0f3;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.form-input:focus, 
+.form-input__comment:focus, 
+.form-input__button:focus {
+    outline-style: none;
+}
+
+.form-input__button:hover {
+    cursor: pointer;
+    background-color: #5487e0;
+}
+
+.form-input__button:focus {
+    background-color: #446DB5;
+}
+
+.form-input:focus, 
+.form-input__comment:focus {
+    background-color: #e1edf5;
+}
+
+
+.form-input__comment {
+    height: 15vh;
+    max-width: 100%;
+    max-height: 15vh;
+}
+
+#custom-amount{
+    text-align: center;
+}
+
+/* Form  */
+
+.form-input {
+    font-family: inherit;
+}
+
+.form-input {
     display: inline-block;
-    background-color: black;
+}
+
+.form-input__button {
+    background-color: #446DB5;
     color: white;
-    border-radius: 3px;
+    width: 100%;
+    /* padding: 0.7rem; */
 }
 
 footer {
