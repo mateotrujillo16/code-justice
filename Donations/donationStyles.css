@@ -11,8 +11,32 @@ h1{
     font-size: 30px;
 }
 
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 17px;
+    }
+}
+
 h2{
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2{
+        font-size: 13px;
+    }
 }
 
 p{
@@ -21,6 +45,12 @@ p{
     padding: 15px 10px;
     font-size: 15px;
     border-radius: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    p{
+        font-size: 10px;
+    }
 }
 
 /* Navbar  */
@@ -34,7 +64,6 @@ p{
     width: 100%;
     align-items: center;
     margin: 0;
-    padding: 0 1rem;
     z-index: 2;
 }
 
@@ -165,9 +194,9 @@ p{
     color: white;
     text-align: center;
     width: 100%;
-    height:auto;
+    height: auto;
     margin: 0rem;
-    padding: 0rem;
+    padding-bottom: 4rem;
 }
 
 /* Body  */
