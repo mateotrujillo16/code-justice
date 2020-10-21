@@ -43,9 +43,17 @@ body {
 } 
 
 .content h1 {
+    font-size: 4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 8rem 8rem 3rem 8rem;
+    color: white;
+}
+
+.content h2 {
     font-size: 3rem;
     font-family: 'IBM Plex Sans', sans-serif;
-    margin: 8rem;
+    margin: 3rem 8rem 8rem 8rem;
+    color: white;
 }
 
 /* Landing Page Nav  */
