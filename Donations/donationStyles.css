@@ -7,7 +7,7 @@ body, html {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-size: 30px;
 }
 
@@ -23,7 +23,7 @@ h1{
     }
 }
 
-h2{
+h2 {
     font-size: 20px;
 }
 
@@ -33,23 +33,17 @@ h2{
     }
 }
 
-@media screen and (max-width: 400px) {
-    h2{
-        font-size: 13px;
-    }
-}
-
-p{
-   
+p {
     display: inline-block;
     padding: 15px 10px;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 0px;
+    line-height: 1.5rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     p{
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 
@@ -193,10 +187,24 @@ p{
     background-color:#444751;
     color: white;
     text-align: center;
+    align-content: center;
     width: 100%;
     height: auto;
     margin: 0rem;
     padding-bottom: 4rem;
+}
+
+.textContainer {
+    display: inline-block;
+    width: 300px;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .textContainer {
+        width: 450px;
+        padding: 4rem;
+    } 
 }
 
 /* Body  */
@@ -291,8 +299,14 @@ p{
 .form-input__button {
     background-color: #446DB5;
     color: white;
-    width: 100%;
+    width: 100px;
     /* padding: 0.7rem; */
+}
+
+@media screen and (min-width: 600px) {
+    .form-input__button {
+        width: 150px;
+    }
 }
 
 footer {
