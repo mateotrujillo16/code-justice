@@ -43,9 +43,17 @@ body {
 } 
 
 .content h1 {
+    font-size: 4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 8rem 8rem 3rem 8rem;
+    color: white;
+}
+
+.content h2 {
     font-size: 3rem;
     font-family: 'IBM Plex Sans', sans-serif;
-    margin: 8rem;
+    margin: 3rem 8rem 8rem 8rem;
+    color: white;
 }
 
 /* Landing Page Nav  */
@@ -56,6 +64,22 @@ body {
     color:  white;
     font-size: 2rem;
     z-index: 3;
+    animation-name: glow;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+    0% {
+        color: white;
+    }
+    50% {
+        color :#ff3d25;
+    }
+    100% {
+        color: white;
+    }
 }
 
 #landing-nav__open:hover {
@@ -170,6 +194,8 @@ body {
 
 /* Navbar  */
 
+
+
 .navbar, .responsive-navbar {
     background-color: white;
     position: fixed;
@@ -257,7 +283,8 @@ body {
 
 .page-footer {
     width: 100%;
-    height: 65px;
+    height: 100px;
+    line-height: 50px;
     background-color: black;
     text-align: center;
     vertical-align: middle;
@@ -401,6 +428,11 @@ p{
     height: 100%;
 }
 
+
+.active {
+    background-color: #f3f3f3;
+}
+
 @media screen and (max-width: 91rem) {
     .contact-body__column__img {
         width: 100%;
@@ -434,6 +466,10 @@ p{
 
     .responsive-navbar {
         display: inline-block;
+    }
+
+    .page-footer {
+        height: auto;
     }
 }
 
