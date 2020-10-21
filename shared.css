@@ -355,7 +355,6 @@ p{
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
-    
    }
 
    .hero-text{
@@ -530,14 +529,4 @@ p{
         transform: translateX(-20rem);
         display: none;
     }
-}
-
-h1{
-    text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-p{
-    font-family: 'IBM Plex Sans', sans-serif  ;
-    text-align: center;
 }
