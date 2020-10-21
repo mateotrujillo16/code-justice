@@ -530,3 +530,10 @@ p{
         display: none;
     }
 }
+
+@media screen and (max-width: 600px){
+    .content h1 {
+        font-size: 1.75rem;
+        margin: 2rem;
+    }
+}
